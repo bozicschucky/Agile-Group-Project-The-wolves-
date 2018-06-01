@@ -1,3 +1,3 @@
 
-self.users = []
-self.comments =[]
+users = []
+comments =[]
