@@ -1,6 +1,7 @@
-class comment:
-    def __init__(self,body,author,timestamp,parent):
+class Comment:
+    def __init__(self,body,author,timestamp,parentId,c_id):
         self.body=body
+        self.c_id=c_id
         self.author=author
         self.timestamp=timestamp
         if(parent!="null"):
@@ -8,7 +9,7 @@ class comment:
             self.parent=parent
          else:
              self.type="comment"
-             self.parent="null"
+             self.parentId="null"
 
     def getBody(self):
         return self.body;
@@ -23,5 +24,11 @@ class comment:
     def setTimestamp(self,timestamp):
         self.timestamp=timestamp;
         
-        
-
+    def setParent(self,parentId):
+        self.parentId=parentId;
+    def getParent(self):
+        return parentId;
+    def setId(self,c_id):
+        self.c_id=c_id;
+    def getParent(self):
+        return c_id;
