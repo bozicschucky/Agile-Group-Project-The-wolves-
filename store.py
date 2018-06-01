@@ -1,0 +1,3 @@
+
+self.users = []
+self.comments =[]
